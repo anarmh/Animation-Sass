@@ -60,132 +60,12 @@
   background-color: white;
 }
 
-@media (max-width: 575.98px) {
-  #wrapper {
-    background-color: #f4f4f6;
-    width: 1000px;
-  }
-  #wrapper .left {
-    width: 1200px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  #wrapper .left .text {
-    position: absolute;
-    left: 500px;
-  }
-  #wrapper .left .text h1 {
-    font-size: 50px;
-    font-weight: 400;
-  }
-  #wrapper .left .text h1 span {
-    color: red;
-  }
-  #wrapper .left .text .p {
-    margin: 30px 0 50px 0;
-  }
-  #wrapper .left .text .p p {
-    line-height: 10px;
-  }
-  #wrapper .right {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-  }
-  #wrapper .right img {
-    width: 100%;
-    height: 100%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@media (max-width: 767.98px) {
-  #wrapper {
-    background-color: #f4f4f6;
-    width: 1000px;
-  }
-  #wrapper .left {
-    width: 1000px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  #wrapper .left .text {
-    position: absolute;
-    left: 500px;
-  }
-  #wrapper .left .text h1 {
-    font-size: 50px;
-    font-weight: 400;
-  }
-  #wrapper .left .text h1 span {
-    color: red;
-  }
-  #wrapper .left .text .p {
-    margin: 30px 0 50px 0;
-  }
-  #wrapper .left .text .p p {
-    line-height: 10px;
-  }
-  #wrapper .right {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-  }
-  #wrapper .right img {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media (max-width: 991.98px) {
-  #wrapper {
-    background-color: #f4f4f6;
-    width: 1000px;
-  }
-  #wrapper .left {
-    width: 1000px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  #wrapper .left .text {
-    position: absolute;
-    left: 500px;
-  }
-  #wrapper .left .text h1 {
-    font-size: 50px;
-    font-weight: 400;
-  }
-  #wrapper .left .text h1 span {
-    color: red;
-  }
-  #wrapper .left .text .p {
-    margin: 30px 0 50px 0;
-  }
-  #wrapper .left .text .p p {
-    line-height: 10px;
-  }
-  #wrapper .right {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-  }
-  #wrapper .right img {
-    width: 100%;
-    height: 100%;
-  }
-}
+
 #wrapper {
   background-color: #f4f4f6;
 }
@@ -250,71 +130,13 @@
 #links-img .select {
   display: flex;
   justify-content: center;
-  margin-left: 90px;
+  padding-left: 90px;
 }
 #links-img .select .button {
   background-color: white;
   color: black;
 }
 
-@media (min-width: 576px) {
-  #photoes .photo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  #photoes .photo .flowers .img {
-    width: 1000px;
-    height: 400px;
-    position: relative;
-    transition: 2s;
-    margin: 0 auto;
-  }
-  #photoes .photo .flowers .img:hover {
-    transform: scale(1, 1);
-  }
-  #photoes .photo .flowers .img img {
-    width: 100%;
-    height: 100%;
-  }
-  #photoes .photo .flowers .img p {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 15px;
-    background-color: black;
-    color: white;
-    font-weight: 400;
-  }
-  #photoes .photo .flowers .img .sale {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 15px;
-    background-color: white;
-    color: black;
-    font-weight: 400;
-  }
-  #photoes .photo .flowers a {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    line-height: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    color: black;
-  }
-  #photoes .photo .flowers .dollar {
-    color: #ddc3b4;
-    text-decoration: none;
-    display: block;
-  }
-  #photoes .photo .flowers .dollar:hover {
-    color: red;
-  }
-}
 #photoes .photo {
   width: 100%;
   display: flex;
@@ -374,11 +196,13 @@
 
 #video {
   background-color: #f7f7f7;
-  height: 700px;
+  margin-top: 50px;
+  height: 600px;
   display: flex;
   align-items: center;
 }
 #video .about {
+  width: 100%;
   padding-left: 50px;
   padding-top: 50px;
 }
@@ -398,9 +222,88 @@
   line-height: 10px;
 }
 #video .about .part .heart-text {
+  width: 100%;
   display: flex;
   gap: 20px;
 }
 #video .about .part .heart-text .heart .fa-heart {
   color: red;
+}
+
+#experts .about-expert {
+  width: 100%;
+}
+#experts .about-expert h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 50px 0;
+}
+#experts .about-expert p {
+  text-align: center;
+  font-size: 20px;
+  color: #6d6a73;
+  line-height: 15px;
+}
+#experts .expert .img {
+  display: flex;
+  justify-content: center;
+}
+#experts .expert .name-expert {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experts .expert .name-expert .name p {
+  text-align: center;
+  line-height: 10px;
+}
+#experts .expert .name-expert .name .position {
+  color: #c1b5b4;
+}
+
+#background .bg {
+  background-image: url("../../../img/h3-background-img.jpg");
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#background .bg .search h2 {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+#background .bg .search form {
+  margin-top: 20px;
+  display: flex;
+}
+#background .bg .search form input {
+  width: 500px;
+  height: 60px;
+  outline: none;
+}
+#background .bg .search form input::-moz-placeholder {
+  padding-left: 20px;
+}
+#background .bg .search form input:-ms-input-placeholder {
+  padding-left: 20px;
+}
+#background .bg .search form input::placeholder {
+  padding-left: 20px;
+}
+#background .bg .search form button {
+  width: 150px;
+  height: 60px;
+  border: none;
+  background-color: #f34f3f;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=home.css.map */

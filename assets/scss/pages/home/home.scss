@@ -2,166 +2,14 @@
 @import "../../Partials/variables";
 
 
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-    #wrapper{
-        background-color: #f4f4f6;
-        width: 1000px;
-       
-        .left{
-            width: 1200px;
-            height: 700px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           position: relative;
-            .text{
-                position: absolute;
-                left: 500px;
-                h1{
-                    font-size: 50px;
-                    font-weight: 400;
-                    span{
-                        color: red;
-                    }
-                }
-                .p{
-                    margin: 30px 0 50px 0;
-                    p{
-                        line-height: 10px;
-                    }
-        
-                }
-               
-            }
-    
-    
-            }
-            .right{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                overflow: hidden;
-                img{
-                   width: 100%;
-                   height: 100%;
-                }
-            }         
-        }
 
 
- }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { 
-    #wrapper{
-        background-color: #f4f4f6;
-        width: 1000px;
-       
-        .left{
-            width: 1000px;
-            height: 700px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           position: relative;
-            .text{
-                position: absolute;
-                left:500px;
-                h1{
-                    font-size: 50px;
-                    font-weight: 400;
-                    span{
-                        color: red;
-                    }
-                }
-                .p{
-                    margin: 30px 0 50px 0;
-                    p{
-                        line-height: 10px;
-                    }
-        
-                }
-               
-            }
-    
-    
-            }
-            .right{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                overflow: hidden;
-                img{
-                   width: 100%;
-                   height: 100%;
-                }
-            }         
-        }
- }
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-    #wrapper{
-        background-color: #f4f4f6;
-        width: 1000px;
-       
-        .left{
-            width: 1000px;
-            height: 700px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           position: relative;
-            .text{
-                position: absolute;
-                left:500px;
-                h1{
-                    font-size: 50px;
-                    font-weight: 400;
-                    span{
-                        color: red;
-                    }
-                }
-                .p{
-                    margin: 30px 0 50px 0;
-                    p{
-                        line-height: 10px;
-                    }
-        
-                }
-               
-            }
-    
-    
-            }
-            .right{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                overflow: hidden;
-                img{
-                   width: 100%;
-                   height: 100%;
-                }
-            }         
-        }
-  }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {  }
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {  }
-
-// XX-Large devices (larger desktops)
-// No media query since the xxl breakpoint has no upper bound on its width
-
-
-    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     
  
 
@@ -242,7 +90,7 @@
     .select{
         display:flex ;
         justify-content: center;
-        margin-left: 90px;
+        padding-left: 90px;
         .button{
             background-color: white;
             color: black;
@@ -253,92 +101,8 @@
 
 
 }
-// X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    #photoes{
-       
-        .photo{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            
-            
-            .flowers{
-                .img{
-                    width: 1000px;
-                    height: 400px;
-                    position:relative;
-                    transition:2s;
-                    margin: 0 auto;
-                    &:hover{
-                        transform: scale(1,1);
-                    }
-                    img{
-                        width: 100%;
-                        height: 100%;
-                      
-                    }
-                    p{
-                        position: absolute;
-                        top: 10px;
-                        left: 10px;
-                        padding: 5px 15px;
-                        background-color: black;
-                        color: white;
-                        font-weight: 400;
-                    }
-                    .sale{
-                        
-                        position: absolute;
-                        top: 10px;
-                        left: 10px;
-                        padding: 5px 15px;
-                        background-color: white;
-                        color: black;
-                        font-weight: 400;
-                    }
-                }
-    
-                a{
-                    display: block;
-                    text-align: center;
-                    margin-top: 20px;
-                    line-height: 5px;
-                    text-decoration: $text-decor;
-                    text-transform: $uppercase;
-                    letter-spacing: 2px;
-                    font-size: 12px;
-                    color: black;
-                }
-                .dollar{
-                    color: #ddc3b4;
-                    text-decoration: $text-decor;
-                    display: block;
-                    &:hover{
-                        color: red;
-                    }
-                }
-            }
-        }
-       
-    }
 
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
 #photoes{
     .photo{
         width: 100%;
@@ -407,10 +171,12 @@
 
 #video{
     background-color: #f7f7f7;
-   height: 700px;
+    margin-top:50px ;
+   height: 600px;
    display: flex;
    align-items: center;
   .about{
+    width: 100%;
     padding-left: 50px;
      padding-top: 50px;
     .title{
@@ -431,6 +197,7 @@
     }
     .part{
         .heart-text{
+            width: 100%;
             display: flex;
             gap: 20px;
             .heart{
@@ -441,4 +208,93 @@
         }
     }
   }
+}
+
+#experts{
+
+    .about-expert{
+        width: 100%;
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 400;
+            margin: 50px 0;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            color: #6d6a73;
+            line-height: 15px;
+            
+        }
+    }
+    .expert{
+
+        .img{
+            display: flex;
+            justify-content: center;
+        }
+        .name-expert{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .name{
+              
+                p{
+                    text-align: center;
+                    line-height: 10px;
+                   
+                }
+                .position{
+                    color: #c1b5b4;
+                }
+            }
+         
+        }
+    }
+}
+#background{
+    .bg{
+        background-image: url("../../../img/h3-background-img.jpg");
+        width: 100%;
+        height: 600px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            .search{
+                h2{
+                    color: white;
+                    font-weight: 300;
+                    text-align: center;
+                }
+                form{
+                    margin-top: 20px;
+                    display: flex;
+                    input{
+                        width: 500px;
+                        height: 60px;
+                        outline: none;
+                        &::placeholder{
+                            padding-left: 20px;
+                        }
+                    }
+                    button{
+                        width: 150px;
+                        height: 60px;
+                        border: none;
+                        background-color: #f34f3f;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        
+    }
 }
