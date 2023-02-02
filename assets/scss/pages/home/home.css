@@ -370,4 +370,37 @@
 }
 #photoes .photo .flowers .dollar:hover {
   color: red;
+}
+
+#video {
+  background-color: #f7f7f7;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+#video .about {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+#video .about .title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 40px;
+}
+#video .about .title span {
+  color: red;
+}
+#video .about .about-text {
+  margin: 30px 0;
+}
+#video .about .about-text .text {
+  color: #7a6a7c;
+  line-height: 10px;
+}
+#video .about .part .heart-text {
+  display: flex;
+  gap: 20px;
+}
+#video .about .part .heart-text .heart .fa-heart {
+  color: red;
 }/*# sourceMappingURL=home.css.map */
