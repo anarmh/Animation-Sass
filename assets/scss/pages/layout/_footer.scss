@@ -1,0 +1,80 @@
+#up{
+    background-color: #fefaf3;
+
+    .title{
+        margin-left: 30px;
+        p{
+            text-transform: $uppercase;
+            font-size: 12px;
+        }
+    }
+    .links{
+        ul{
+
+            li{
+                list-style-type: $list-type;
+                a{
+                    text-decoration: $text-decor;
+                    color: #c6b79f;
+                    font-size: 12px;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+#down{
+    height: 60px;
+    padding-top: 20px;
+    .faq{
+        padding-left: 30px;
+        span{
+            font-size: 12px;
+            color: #c1afbe;
+        }
+        a{
+            font-size: 12px;
+            text-decoration: $text-decor;
+            color: #bc8c6a;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    .cards{
+        display: flex;
+        gap: 10px;
+       
+        .wallet{
+           
+            a{
+                text-decoration: $text-decor;
+                color: #c1afbe;
+            }
+        }
+       
+    }
+   
+    .socials{
+        a{
+            text-transform: $uppercase;
+            font-size: 12px;
+            text-decoration: $text-decor;
+            color: #c1afbe;
+            &:hover{
+                color: red;
+            }
+        }
+        .facebook{
+            padding-left: 20px;
+        }
+    }
+
+}

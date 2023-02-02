@@ -60,6 +60,68 @@
   background-color: white;
 }
 
+#up {
+  background-color: #fefaf3;
+}
+#up .title {
+  margin-left: 30px;
+}
+#up .title p {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#up .links ul li {
+  list-style-type: none;
+}
+#up .links ul li a {
+  text-decoration: none;
+  color: #c6b79f;
+  font-size: 12px;
+}
+#up .links ul li a:hover {
+  color: red;
+}
+
+#down {
+  height: 60px;
+  padding-top: 20px;
+}
+#down .faq {
+  padding-left: 30px;
+}
+#down .faq span {
+  font-size: 12px;
+  color: #c1afbe;
+}
+#down .faq a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #bc8c6a;
+}
+#down .faq a:hover {
+  color: red;
+}
+#down .cards {
+  display: flex;
+  gap: 10px;
+}
+#down .cards .wallet a {
+  text-decoration: none;
+  color: #c1afbe;
+}
+#down .socials a {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  color: #c1afbe;
+}
+#down .socials a:hover {
+  color: red;
+}
+#down .socials .facebook {
+  padding-left: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -356,13 +418,41 @@
   line-height: 10px;
 }
 
-#carusel-blog .carusel-info {
+#carusel-blog {
+  margin-top: 50px;
+}
+#carusel-blog .carusel {
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
-#carusel-blog .carusel-info .carusel {
+#carusel-blog .carusel .icon a {
+  color: #bdb8b8;
+  text-decoration: none;
+}
+#carusel-blog .carusel .icon a:hover {
+  color: black;
+}
+#carusel-blog .center {
+  width: 100%;
+}
+#carusel-blog .center .about .img {
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#carusel-blog .center .about h3 {
+  text-align: center;
+  color: #5b5858;
+  font-weight: 300;
+}
+#carusel-blog .center .about .upper {
+  text-align: center;
+  text-transform: uppercase;
+}
+#carusel-blog .center .about .color {
+  color: #bbbbbb;
+  text-align: center;
 }/*# sourceMappingURL=home.css.map */
