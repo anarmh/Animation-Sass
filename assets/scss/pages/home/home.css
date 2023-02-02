@@ -266,7 +266,7 @@
 #background .bg {
   background-image: url("../../../img/h3-background-img.jpg");
   width: 100%;
-  height: 600px;
+  height: 500px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -306,4 +306,63 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
+}
+#background .bg .search form button:hover {
+  background-color: red;
+}
+
+#from-our-blog {
+  padding-top: 50px;
+  background-color: #f8f8f8;
+}
+#from-our-blog .blog {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#from-our-blog .blog h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 40px;
+}
+#from-our-blog .blog p {
+  text-align: center;
+  line-height: 15px;
+  color: #9f8b81;
+}
+#from-our-blog .info-blog .img {
+  width: 400px;
+  height: 250px;
+  position: relative;
+}
+#from-our-blog .info-blog .img img {
+  width: 100%;
+  height: 100%;
+}
+#from-our-blog .info-blog .img p {
+  position: absolute;
+  margin: 10px;
+  padding: 5px 20px;
+  background-color: white;
+  font-size: 12px;
+}
+#from-our-blog .info-blog .info h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 300;
+}
+#from-our-blog .info-blog .info p {
+  text-align: center;
+  line-height: 10px;
+}
+
+#carusel-blog .carusel-info {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#carusel-blog .carusel-info .carusel {
+  display: flex;
 }/*# sourceMappingURL=home.css.map */
