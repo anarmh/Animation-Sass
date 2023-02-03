@@ -1,6 +1,5 @@
 #nav-area {
   width: 100%;
-  height: 100px;
   display: flex;
   align-items: center;
 }
@@ -122,12 +121,6 @@
   padding-left: 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 #wrapper {
   background-color: #f4f4f6;
 }
@@ -165,6 +158,10 @@
 #wrapper .right img {
   width: 100%;
   height: 100%;
+  transition: all 500ms;
+}
+#wrapper .right img:hover {
+  scale: 1.1;
 }
 
 #links-img {
@@ -199,6 +196,9 @@
   color: black;
 }
 
+#photoes {
+  width: 100%;
+}
 #photoes .photo {
   width: 100%;
   display: flex;
@@ -209,10 +209,10 @@
   width: 300px;
   height: 400px;
   position: relative;
-  transition: 2s;
+  transition: all 200ms;
 }
 #photoes .photo .flowers .img:hover {
-  transform: scale(1, 1);
+  scale: 1.1;
 }
 #photoes .photo .flowers .img img {
   width: 100%;
@@ -259,9 +259,17 @@
 #video {
   background-color: #f7f7f7;
   margin-top: 50px;
-  height: 600px;
+  height: auto;
   display: flex;
   align-items: center;
+}
+#video .iframe {
+  width: 600px;
+  height: 400px;
+}
+#video .iframe iframe {
+  width: 100%;
+  height: 100%;
 }
 #video .about {
   width: 100%;
@@ -396,6 +404,10 @@
   width: 400px;
   height: 250px;
   position: relative;
+  transition: scale 200ms;
+}
+#from-our-blog .info-blog .img:hover {
+  scale: 1.1;
 }
 #from-our-blog .info-blog .img img {
   width: 100%;
@@ -455,4 +467,51 @@
 #carusel-blog .center .about .color {
   color: #bbbbbb;
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  #wrapper {
+    background-color: #f4f4f6;
+    margin: 0 auto;
+  }
+  #wrapper .left {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #wrapper .left .text {
+    position: absolute;
+    left: 15%;
+  }
+  #wrapper .left .text h1 {
+    font-size: 50px;
+    font-weight: 400;
+  }
+  #wrapper .left .text h1 span {
+    color: red;
+  }
+  #wrapper .left .text .p {
+    margin: 30px 0 50px 0;
+  }
+  #wrapper .left .text .p p {
+    line-height: 10px;
+  }
+  #wrapper .right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  #wrapper .right img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms;
+  }
+  #wrapper .right img:hover {
+    scale: 1.1;
+  }
 }/*# sourceMappingURL=home.css.map */
