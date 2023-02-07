@@ -5,12 +5,12 @@
 
 
 
-    // *{
-    //     margin: 0;
-    //     padding: 0;
-    //     box-sizing: border-box;
-        
-    // }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    //     border: 1px solid red;
+    }
     
  
 
@@ -48,26 +48,34 @@
 
         }
         .right{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-start;
-            overflow: hidden;
+            // width: 100%;
+            // height: 100%;
+            // display: flex;
+            // justify-content: flex-start;
+            width: 400px;
+            height: 400px;
+            
+           animation: flowers 10s infinite;
+            
             img{
-               width: 100%;
-               height: 100%;
-               transition: all 500ms;
-               &:hover{
-                   scale: 1.1;
-               }
+               width: 500px;
+               height: 500px;
+            //    transition: all 500ms;
+            //    overflow: hidden;
+               
+            //    &:hover{
+            //        scale: 1.1;
+            //    }
+
             }
         }         
     }
-  
-
+  @keyframes flowers{
+    0%, 75% {background-image: url(/assets/img/h3-background-img.jpg);}
+    25%, 100% {background-image: url(/assets/img/h3-slider-background-2.jpg);}
+    50% {background-image: url(/assets/img/h3-slider-background-3.jpg);}
     
-
-
+}
 #links-img{
 
     margin-top: 30px;
